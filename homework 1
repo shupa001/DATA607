@@ -1,0 +1,43 @@
+---
+title: "Homework 1 - Mushrooms"
+author: "Yan Lin"
+date: "September 3, 2017"
+output: pdf_document
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#import the data to theUrl
+theUrl <- "https://archive.ics.uci.edu/ml/machine-learning-databases/mushroom/agaricus-lepiota.data"
+
+#read the data from theUrl to table mushroom
+mushroom <- read.table(file = theUrl, header = FALSE, ",")
+
+#check
+head(mushroom)
+
+#select first column - classes, third column - cap-surface, fifth column - burises?, and seventh column - gill-attachment
+n <- data.frame(mushroom[c(1,3,5,7)])
+
+#give the names to the columns
+colnames(n) <- c("classes","cap-surface","bruises?","gill-attachment")
+
+#check
+head(n)
+
+#assign the meaning to each initial under the different columns
+n$classes <- ifelse(n$classes=="p","poisonous","edible")
+n$`cap-surface` <- ifelse(n$`cap-surface`== "b","bell",ifelse(n$`cap-surface`=="c","conical",ifelse(n$`cap-surface`=="x","convex",ifelse(n$`cap-surface`=="f","flat",ifelse(n$`cap-surface`=="k","knobbed","sunken")))))
+n$`bruises?` <- ifelse(n$`bruises?`=="t","burises","no")
+n$`gill-attachment` <- ifelse(n$`gill-attachment`=="a","attached",ifelse(n$`gill-attachment`=="d","descending",ifelse(n$`gill-attachment`=="f","free","notched")))
+
+#check
+head(n)
+
+
+
+
