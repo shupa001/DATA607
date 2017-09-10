@@ -1,0 +1,23 @@
+---
+title: "hw 2 - Yan Lin"
+author: "Yan Lin"
+date: "September 10, 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Method 1 - Read table from R by using RMySQL package
+library(RMySQL)
+mydb = dbConnect(MySQL(),user='root',password='',dbname='flights',host='localhost')
+movie_review = dbSendQuery(mydb,"select * from TB")
+data.frame(fetch(movie_review))
+print(data.frame)
+
+#Method 2 - Import csv file which is exported from SQL
+getwd()
+setwd("C:/ProgramData/MySQL/MySQL Server 5.7/Uploads")
+movie_review <- read.csv("movie.csv",header=TRUE,",")
+head(movie_review)
