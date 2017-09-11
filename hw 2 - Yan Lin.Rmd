@@ -6,7 +6,7 @@ output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(eval= TRUE, echo = TRUE)
 ```
 
 #Method 1 - Read table from R by using RMySQL package
@@ -14,7 +14,6 @@ library(RMySQL)
 mydb = dbConnect(MySQL(),user='root',password='',dbname='flights',host='localhost')
 movie_review = dbSendQuery(mydb,"select * from TB")
 data.frame(fetch(movie_review))
-print(data.frame)
 
 #Method 2 - Import csv file which is exported from SQL
 getwd()
