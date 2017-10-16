@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Favorite_Books>
+    <Book>
+        <Title>The Power of Now</Title>
+        <Author1>Eckhart Tolle</Author1>
+        <Author2></Author2>
+        <Amazon_Review>4.5<Amazon_Review>
+        <Best_Quote_or_Interest>All problems are illusions of the mind.</Best_Quote_or_Interest>
+    </Book>
+    <Book>
+        <Title>How Not to Be Wrong</Title>
+        <Author1>Jordan Ellenberg</Author1>
+        <Author2></Author2>
+        <Amazon_Review>4.5<Amazon_Review>
+        <Best_Quote_or_Interest>Improbable things happen a lot.</Best_Quote_or_Interest>
+    </Book>
+    <Book>
+        <Title>Dictionary of Finance and Investment Terms</Title>
+        <Author1>John Downes</Author1>
+        <Author2>Jordan Goodman</Author2>
+        <Amazon_Review>5.0<Amazon_Review>
+        <Best_Quote_or_Interest>More than 5,000 terms realted to stocks, bonds, mutual funds, banking, tax laws, and transactions in the various financial markets are presented alphabetically with descriptions.</Best_Quote_or_Interest>
+    </Book>
+</Favorite_Books>
