@@ -4,14 +4,14 @@
     <Book>
         <Title>The Power of Now</Title>
         <Author1>Eckhart Tolle</Author1>
-        <Author2> </Author2>
+        <Author2 />
         <Amazon_Review>4.5</Amazon_Review>
         <Best_Quote_or_Interest>All problems are illusions of the mind.</Best_Quote_or_Interest>
     </Book>
     <Book>
         <Title>How Not to Be Wrong</Title>
         <Author1>Jordan Ellenberg</Author1>
-        <Author2> </Author2>
+        <Author2 />
         <Amazon_Review>4.5</Amazon_Review>
         <Best_Quote_or_Interest>Improbable things happen a lot.</Best_Quote_or_Interest>
     </Book>
