@@ -1,0 +1,20 @@
+{"Favorite Books": [
+    {
+    "Title": "The Power of Now",
+    "Author": "Eckhart Tolle",
+    "Amazon Review": 4.5,
+    "Best Quote/Interest": "All problems are illusions of the mind."
+    },
+    {
+    "Title": "How Not to Be Wrong",
+    "Author": "Jordan Ellenberg",
+    "Amazon Review": 4.5,
+    "Best Quote/Interest":"Improbable things happen a lot."
+    },
+    {
+    "Title": "Dictionary of Finance and Investment Terms",
+    "Author": ["John Downes", "Jordan Goodman"],
+    "Amazon Review": 5.0,
+    "Best Quote/Interest":"Explanation of 5,000 + financial terms."
+    }	
+]} 
